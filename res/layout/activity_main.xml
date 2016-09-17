@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jarvis.MainActivity" >
+
+    <ImageButton
+        android:id="@+id/imageButtonBlue"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/blue" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGreen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButtonBlue"
+        android:layout_below="@+id/imageButtonBlue"
+        android:layout_marginTop="73dp"
+        android:src="@drawable/green" />
+
+    <ImageButton
+        android:id="@+id/imageButtonYellow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButtonRed"
+        android:layout_alignTop="@+id/imageButtonGreen"
+        android:src="@drawable/yellow" />
+
+    <Button
+        android:id="@+id/buttonAboutUs"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonGreen"
+        android:layout_marginTop="36dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageButtonGreen"
+        android:background="#000000"
+        android:text="About Us"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRed"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageButtonBlue"
+        android:layout_toRightOf="@+id/buttonAboutUs"
+        android:src="@drawable/red" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonYellow"
+        android:layout_alignRight="@+id/imageButtonYellow"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="73dp"
+        android:text="Select Theme"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonBlue"
+        android:layout_alignLeft="@+id/imageButtonBlue"
+        android:layout_marginBottom="9dp"
+       
+        android:text="Just A Rather Very Intelligent System"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic" />
+   
+</RelativeLayout>
